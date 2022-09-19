@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #fff;
+        color: #474e5d;
+      }
+      .about-section p {
+        width: 60%;
+        margin-left: 20%;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+      @media (max-width: 450px) {
+        .about-section {
+          padding: 20px;
+          text-align: center;
+          background-color: #fff;
+          color: #474e5d;
+        }
+        .about-section p {
+          width: 100%;
+          margin-left: 0%;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    </style>
+    <style>
+      /* body {font-family: Arial, Helvetica, sans-serif;} */
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 11; /* Sit on top */
+        /* left: 20%; */
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        -webkit-animation-name: fadeIn; /* Fade in the background */
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s;
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: fixed;
+        top: 100px;
+        background-color: transparent;
+        width: 60%;
+        margin-left: 20%;
+        -webkit-animation-name: slideIn;
+        -webkit-animation-duration: 0.4s;
+        animation-name: slideIn;
+        animation-duration: 0.4s;
+      }
+
+      /* The Close Button */
+      .close {
+        color: #fff;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: -10px;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .modal-header {
+        padding: 2px 16px;
+        /* background-color: #5cb85c; */
+        color: white;
+      }
+
+      .modal-body {
+        padding: 2px 16px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        background-color: transparent;
+      }
+      .modal-body a {
+        color: #000;
+        text-decoration: none;
+      }
+      .modal-body p {
+        color: #000;
+        padding: 10px;
+        border: 2px solid #c5e4f0;
+        background-color: #f5f5f5;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 5px;
+      }
+
+      .modal-footer {
+        padding: 2px 16px;
+        background-color: #5cb85c;
+        color: white;
+      }
+
+      /* Add Animation */
+      @-webkit-keyframes slideIn {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          top: -300px;
+          opacity: 0;
+        }
+        to {
+          top: 0;
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @media (max-width: 450px) {
+        .modal-content {
+          width: 100%;
+          margin-left: 0%;
+        }
+      }
+    </style>
+
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  </head>
+  <body>
+    <div id="wb_LayoutGrid4">
+      <div id="LayoutGrid4">
+        <div class="row" id="myBtn">
+          <div class="col-1">
+            <div id="wb_Image2">
+              <img src="images/1-white-matte.gif" id="Image2" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <a href="index.html"
+            ><p
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="./images/home.PNG"
+                style="height: 20px; margin-right: 10px"
+              />Home
+            </p></a
+          >
+          <a href="about.html"
+            ><p
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="./images/about.PNG"
+                style="height: 20px; margin-right: 10px"
+              />About Us
+            </p></a
+          >
+          <a href="https://wa.me/message/YOJ55DYXNKAKK1" target="_blank">
+            <p
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="./images/whatsapp.PNG"
+                style="height: 20px; margin-right: 10px"
+              />WhatsApp Support
+            </p>
+          </a>
+          <a
+            href="mailto:info@qikr.co.uk?subject=QIKR%20info%20query."
+            class="text"
+          >
+            <p
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="./images/email.PNG"
+                style="height: 20px; margin-right: 10px"
+              />Email
+            </p>
+          </a>
+          <a href="blog.html"
+            ><p
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <img
+                src="./images/blog.PNG"
+                style="height: 20px; margin-right: 10px"
+              />Blog
+            </p></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="about-section">
+      <h1 style="font-size: 2.5rem">About Us</h1>
+      <div id="typing"></div>
+    </div>
+    <script>
+      var typing = document.getElementById("typing");
+
+      var typewriter = new Typewriter(typing, {
+        loop: false,
+      });
+
+      typewriter
+        .typeString(
+          '<p style="font-weight: bold;font-size: 20px"> Qikr is the new generation taxi app in Haywards Heath and Burgess Hill covering all areas in Mid Sussex and beyond.</p> '
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 22px"> Driver Tracking</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px"> Qikr is the first and only taxi company based in Haywards Heath and Burgess Hill to offer a service that allows you to track your driver at all times through our app. </p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 22px">Payment Options</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px"> Payment options that are available include Google pay, Apple pay, credit card or cash. </p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 22px">Reduced Rate</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px">When you order a taxi from Haywards Heath or Burgess Hill through our app, prices are set at the same rate 24/7 and are cheaper than the meter rate. Our taxi app system calculates the price per mile only and does not charge you based on travel time. Extra charges include waiting time and additional stops. A no-show cancellation fee applies six minutes after the booking time.</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px">We are also the only taxi company in Haywards Heath and Burgess Hill to offer a pet-friendly feature on our app.</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px">Airport bookings to and from Haywards Heath and Burgess Hill can be booked online via our website at more affordable rates.</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 22px">Experienced, Reliable and Trustworthy Drivers</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px">All our drivers are CRB checked and have vehicles inspected for safety by the local council every six months.</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold;  font-size: 20px">Our drivers are experienced and have a broad knowledge of Haywards Heath, Burgess Hill and the surrounding areas. Qikr Taxis have extensive experience of running a taxi service in Haywards Heath and Burgess Hill. Following many surveys and feedback from customers, we have invested in new technology to fulfil our customers needs and requirements. Our innovative technology is aimed at offering you a better taxi service experience without the stress that may be associated with it.</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px">Stress-free Booking Experience</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px">No more wondering where your taxi is, no more calls and waiting time, no more stressful experiences: just book a taxi through our app the Qikr way.</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px">Should you require a taxi in Haywards Heath, Burgess Hill, or the surrounding areas, you can either book online or through our app and get your taxi to your door in minutes.</p>'
+        )
+        .pauseFor(1000)
+        .typeString(
+          '<p style="font-weight: bold; font-size: 20px; color: #007bce">Book with us to get your taxi the Qikr way.</p>'
+        )
+        .pauseFor(1000)
+        .start();
+    </script>
+    <div id="wb_LayoutGrid6">
+      <div id="LayoutGrid6">
+        <div class="row">
+          <div class="col-1">
+            <div id="wb_FlexContainer1">
+              <div id="FlexContainer1">
+                <hr id="DividerLine8" />
+                <div id="wb_Heading3">
+                  <h2 id="Heading3">Follow Us</h2>
+                </div>
+                <hr id="DividerLine9" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="wb_LayoutGrid3">
+      <div id="LayoutGrid3">
+        <div class="row">
+          <div class="col-1">
+            <div id="wb_Image3">
+              <a href="https://www.facebook.com/qikrtaxiapp/" target="_blank">
+                <img src="images/face-icone.png" id="Image3" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-2">
+            <div id="wb_Image4">
+              <a href="https://twitter.com/QikrH?s=08" target="_blank"
+                ><img src="images/twitter-square.png" id="Image4" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div id="wb_Image5">
+              <a href="https://youtu.be/JXMqXZVA_JM" target="_blank"
+                ><img src="images/youtub-app.png" id="Image5" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div id="wb_Image6">
+              <a
+                href="https://www.instagram.com/p/CKvBhsqFe57/?igshid=1eljlgrp456od"
+                target="_blank"
+                ><img src="images/Instagram-icon.png" id="Image6" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-5">
+            <div id="wb_Image71">
+              <a href="https://vm.tiktok.com/ZMeCDd2YL/" target="_blank"
+                ><img src="images/tiktok-square.png" id="Image71" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

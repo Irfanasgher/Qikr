@@ -1,0 +1,633 @@
+.latest {
+	position: relative;
+	width: 100%;
+	height: 1570px;
+	background: aliceblue;
+}
+.latest .line1 {
+	position: absolute;
+	height: 4px;
+	width: 40px;
+	top: 85px;
+	left: 510px;
+	background: #f89c35;
+}
+.latest h1 {
+	position: absolute;
+	left: 510px;
+	top: 100px;
+	color: #062c4c;
+}
+.latest .line2 {
+	position: absolute;
+	height: 4px;
+	width: 40px;
+	top: 130px;
+	left: 810px;
+	background: #f89c35;
+}
+.latest p {
+	position: absolute;
+	left: 300px;
+	top: 160px;
+	width: 700px;
+	color: gray;
+	font-size: 25px;
+	text-align: center;
+	line-height: normal;
+}
+.latest .images {
+	position: absolute;
+	width: 400px;
+	height: 420px;
+	left: 50px;
+	top: 300px;
+}
+.latest .images img {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	top: 0px;
+	left: 0px;
+	border: 10px solid white;
+}
+.latest .images .p1 {
+	position: absolute;
+	top: 280px;
+	left: -220px;
+	font-size: 15px;
+	color: #039dae;
+}
+.latest .images h4 {
+	position: absolute;
+	top: 315px;
+	left: 5px;
+	font-size: 20px;
+	color: #062c4c;
+}
+.latest .images .p2 {
+	position: absolute;
+	width: 390px;
+	top: 360px;
+	left: 5px;
+	font-size: 15px;
+	text-align: left;
+	color: gray;
+}
+.latest .img2 {
+	left: 480px;
+}
+.latest .img3 {
+	left: 910px;
+}
+.latest .client {
+	position: absolute;
+	height: 500px;
+	width: 800px;
+	top: 800px;
+	left: 0px;
+	background: #039dae;
+	z-index: 1;
+}
+.latest .client h2 {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	color: white;
+	font-size: 40px;
+}
+.latest .client .p1 {
+	position: absolute;
+	top: 140px;
+	left: -120px;
+	color: white;
+	font-size: 15px;
+}
+.latest .client img {
+	position: absolute;
+	top: 200px;
+	left: 100px;
+	border-radius: 100px;
+}
+.latest .client .p2 {
+	position: absolute;
+	width: 410px;
+	top: 230px;
+	left: 300px;
+	color: white;
+	text-align: left;
+	font-size: 15px;
+}
+.latest .client h4 {
+	position: absolute;
+	top: 330px;
+	left: 300px;
+	color: white;
+}
+.latest .client .client-test {
+	position: absolute;
+	top: 360px;
+	left: 300px;
+	color: white;
+}
+.latest .last {
+	position: absolute;
+	height: 500px;
+	width: 100%;
+	left: 0px;
+	top: 800px;
+}
+.latest .request {
+	position: absolute;
+	height: 160px;
+	width: 1160px;
+	left: 100px;
+	top: 1220px;
+	background: #f89c35;
+	z-index: 2;
+}
+.latest .request img {
+	position: absolute;
+	left: 100px;
+	top: 40px;
+}
+.latest .request h2 {
+	position: absolute;
+	left: 150px;
+	top: 60px;
+	color: white;
+	font-size: 30px;
+}
+.latest .request p {
+	position: absolute;
+	left: -5px;
+	top: 90px;
+	color: white;
+	font-size: 15px;
+}
+.latest .request .button {
+	position: absolute;
+	height: 60px;
+	width: 150px;
+	left: 950px;
+	top: 50px;
+	font-size: 20px;
+	padding: 20px;
+	border-radius: 30px;
+	color: white;
+	background: #062c4c;
+}
+.latest .icons {
+	position: absolute;
+	height: 100px;
+	width: 200px;
+	left: 100px;
+	top: 1430px;
+	background: lightgrey;
+	border: 5px solid gray;
+}
+.latest .icons img {
+	position: absolute;
+	left: 20px;
+	top: 25px;
+}
+.latest .icon2 {
+	left: 340px;
+}
+.latest .icon3 {
+	left: 580px;
+}
+.latest .icon4 {
+	left: 820px;
+}
+.latest .icon5 {
+	left: 1060px;
+}
+
+@media (max-width: 386px) {
+	.latest {
+		position: relative;
+		width: 100%;
+		height: 750px;
+		background: aliceblue;
+	}
+	.latest .line1 {
+		position: absolute;
+		height: 4px;
+		width: 20px;
+		top: 85px;
+		left: 110px;
+		background: #f89c35;
+	}
+	.latest h1 {
+		position: absolute;
+		left: 110px;
+		top: 90px;
+		color: #062c4c;
+		font-size: 12px;
+	}
+	.latest .line2 {
+		position: absolute;
+		height: 4px;
+		width: 20px;
+		top: 110px;
+		left: 220px;
+		background: #f89c35;
+	}
+	.latest p {
+		position: absolute;
+		left: 70px;
+		top: 160px;
+		width: 250px;
+		color: gray;
+		font-size: 8px;
+		text-align: center;
+		line-height: normal;
+	}
+	.latest .images {
+		position: absolute;
+		width: 110px;
+		height: 150px;
+		left: 10px;
+		top: 200px;
+		border: 1px solid red;
+	}
+	.latest .images img {
+		position: absolute;
+		width: 110px;
+		height: 90px;
+		top: 0px;
+		left: 0px;
+		border: 4px solid white;
+	}
+	.latest .images .p1 {
+		position: absolute;
+		top: 95px;
+		left: -80px;
+		font-size: 5px;
+		color: #039dae;
+	}
+	.latest .images h4 {
+		position: absolute;
+		top: 100px;
+		left: 5px;
+		font-size: 6px;
+		color: #062c4c;
+	}
+	.latest .images .p2 {
+		position: absolute;
+		width: 100px;
+		top: 115px;
+		left: 5px;
+		font-size: 4px;
+		text-align: left;
+		color: gray;
+	}
+	.latest .img2 {
+		left: 130px;
+	}
+	.latest .img3 {
+		left: 250px;
+	}
+	.latest .client {
+		position: absolute;
+		height: 200px;
+		width: 55%;
+		top: 380px;
+		left: 0px;
+		background: #039dae;
+		z-index: 1;
+	}
+	.latest .client h2 {
+		position: absolute;
+		top: 10px;
+		left: 20px;
+		color: white;
+		font-size: 10px;
+	}
+	.latest .client .p1 {
+		position: absolute;
+		top: 30px;
+		left: -40px;
+		color: white;
+		font-size: 8px;
+	}
+	.latest .client img {
+		position: absolute;
+		top: 50px;
+		left: 10px;
+		border-radius: 100px;
+		width: 70px;
+	}
+	.latest .client .p2 {
+		position: absolute;
+		width: 110px;
+		top: 70px;
+		left: 100px;
+		color: white;
+		text-align: left;
+		font-size: 6px;
+	}
+	.latest .client h4 {
+		position: absolute;
+		top: 110px;
+		left: 100px;
+		color: white;
+		font-size: 12px;
+	}
+	.latest .client .client-test {
+		position: absolute;
+		top: 130px;
+		left: 100px;
+		color: white;
+		font-size: 10px;
+	}
+	.latest .last {
+		position: absolute;
+		height: 200px;
+		width: 100%;
+		left: 0px;
+		top: 380px;
+	}
+	.latest .request {
+		position: absolute;
+		height: 100px;
+		width: 80%;
+		left: 10%;
+		top: 550px;
+		background: #f89c35;
+		z-index: 2;
+	}
+	.latest .request img {
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		height: 30px;
+	}
+	.latest .request h2 {
+		position: absolute;
+		left: 50px;
+		top: 20px;
+		color: white;
+		font-size: 12px;
+	}
+	.latest .request p {
+		position: absolute;
+		left: 30px;
+		top: 40px;
+		color: white;
+		font-size: 8px;
+	}
+	.latest .request .button {
+		position: absolute;
+		height: 30px;
+		width: 100px;
+		left: 33%;
+		top: 65px;
+		font-size: 12px;
+		padding-top: 8px;
+		padding-left: 15px;
+		border-radius: 30px;
+		color: white;
+		background: #062c4c;
+	}
+	.latest .icons {
+		position: absolute;
+		height: 60px;
+		width: 70px;
+		left: 0px;
+		top: 660px;
+		background: lightgrey;
+		border: 2px solid gray;
+	}
+	.latest .icons img {
+		position: absolute;
+		left: 2px;
+		top: 20px;
+		width: 60px;
+	}
+	.latest .icon2 {
+		left: 75px;
+	}
+	.latest .icon3 {
+		left: 150px;
+	}
+	.latest .icon4 {
+		left: 225px;
+	}
+	.latest .icon5 {
+		left: 300px;
+	}
+}
+
+@media (max-width: 786px) {
+	.latest {
+		position: relative;
+		width: 100%;
+		height: 1050px;
+		background: aliceblue;
+	}
+	.latest .line1 {
+		position: absolute;
+		height: 4px;
+		width: 40px;
+		top: 85px;
+		left: 180px;
+		background: #f89c35;
+	}
+	.latest h1 {
+		position: absolute;
+		left: 180px;
+		top: 100px;
+		color: #062c4c;
+	}
+	.latest .line2 {
+		position: absolute;
+		height: 4px;
+		width: 40px;
+		top: 130px;
+		left: 480px;
+		background: #f89c35;
+	}
+	.latest p {
+		position: absolute;
+		left: 100px;
+		top: 160px;
+		width: 550px;
+		color: gray;
+		font-size: 15px;
+		text-align: center;
+		line-height: normal;
+	}
+	.latest .images {
+		position: absolute;
+		width: 200px;
+		height: 270px;
+		left: 50px;
+		top: 300px;
+		border: 1px solid red;
+	}
+	.latest .images img {
+		position: absolute;
+		width: 200px;
+		height: 150px;
+		top: 0px;
+		left: 0px;
+		border: 10px solid white;
+	}
+	.latest .images .p1 {
+		position: absolute;
+		top: 160px;
+		left: -190px;
+		font-size: 10px;
+		color: #039dae;
+	}
+	.latest .images h4 {
+		position: absolute;
+		top: 180px;
+		left: 5px;
+		font-size: 10px;
+		color: #062c4c;
+	}
+	.latest .images .p2 {
+		position: absolute;
+		width: 190px;
+		top: 220px;
+		left: 5px;
+		font-size: 8px;
+		text-align: left;
+		color: gray;
+	}
+	.latest .img2 {
+		left: 280px;
+	}
+	.latest .img3 {
+		left: 510px;
+	}
+	.latest .client {
+		position: absolute;
+		height: 300px;
+		width: 55%;
+		top: 580px;
+		left: 0px;
+		background: #039dae;
+		z-index: 1;
+	}
+	.latest .client h2 {
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		color: white;
+		font-size: 20px;
+	}
+	.latest .client .p1 {
+		position: absolute;
+		top: 60px;
+		left: -120px;
+		color: white;
+		font-size: 15px;
+	}
+	.latest .client img {
+		position: absolute;
+		top: 100px;
+		left: 30px;
+		border-radius: 100px;
+	}
+	.latest .client .p2 {
+		position: absolute;
+		width: 200px;
+		top: 140px;
+		left: 210px;
+		color: white;
+		text-align: left;
+		font-size: 10px;
+	}
+	.latest .client h4 {
+		position: absolute;
+		top: 210px;
+		left: 210px;
+		color: white;
+	}
+	.latest .client .client-test {
+		position: absolute;
+		top: 230px;
+		left: 210px;
+		color: white;
+	}
+	.latest .last {
+		position: absolute;
+		height: 300px;
+		width: 100%;
+		left: 0px;
+		top: 580px;
+	}
+	.latest .request {
+		position: absolute;
+		height: 100px;
+		width: 80%;
+		left: 10%;
+		top: 830px;
+		background: #f89c35;
+		z-index: 2;
+	}
+	.latest .request img {
+		position: absolute;
+		left: 30px;
+		top: 20px;
+		height: 30px;
+	}
+	.latest .request h2 {
+		position: absolute;
+		left: 80px;
+		top: 30px;
+		color: white;
+		font-size: 15px;
+	}
+	.latest .request p {
+		position: absolute;
+		left: -40px;
+		top: 50px;
+		color: white;
+		font-size: 12px;
+	}
+	.latest .request .button {
+		position: absolute;
+		height: 30px;
+		width: 100px;
+		left: 70%;
+		top: 35px;
+		font-size: 12px;
+		padding-top: 8px;
+		padding-left: 15px;
+		border-radius: 30px;
+		color: white;
+		background: #062c4c;
+	}
+	.latest .icons {
+		position: absolute;
+		height: 60px;
+		width: 130px;
+		left: 30px;
+		top: 960px;
+		background: lightgrey;
+		border: 5px solid gray;
+	}
+	.latest .icons img {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		width: 100px;
+	}
+	.latest .icon2 {
+		left: 170px;
+	}
+	.latest .icon3 {
+		left: 310px;
+	}
+	.latest .icon4 {
+		left: 450px;
+	}
+	.latest .icon5 {
+		left: 590px;
+	}
+}
